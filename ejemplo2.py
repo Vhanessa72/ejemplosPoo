@@ -1,10 +1,10 @@
-class ropero():
+class Ropero():
 
-    def __init__(self, color, alto, ancho, nrocajones, precio):
+    def __init__(self, color, alto, ancho, nro_cajones, precio):
         self.color = color
         self.alto = alto
         self.ancho = ancho
-        self.nrocajones = nrocajones
+        self.nrocajones = nro_cajones
         self.precio = precio
 
     def comprar(self):
@@ -17,10 +17,10 @@ class ropero():
         print("El ropero ha sido regalado")
 
     def __str__(self):
-        return "color: {}, alto: {}, ancho: {},nrocajones {},precio{}".format(self.color,
-        self.alto, self.ancho,self.nrocajones, self.precio)
+        return "color: {}, alto: {}, ancho: {},nro_cajones {},precio{}".format(self.color,
+        self.alto, self.ancho,self.nro_cajones, self.precio)
 
-ropero1 = ropero("Blanco", "10 metros", "8 metros", 4 , "200 Bs")
-ropero1.comprar()
-ropero1.vender()
-ropero1.regalar()
+ropero_1 = Ropero("Blanco", "10 metros", "8 metros", 4 , "200 Bs")
+ropero_1.comprar()
+ropero_1.vender()
+ropero_1.regalar()
